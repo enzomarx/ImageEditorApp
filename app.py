@@ -7,8 +7,8 @@ from tkinter import PhotoImage
 class ImageEditorApp:
     def __init__(self, root):  # Corrigido de _init_ para __init__
         self.root = root
-        self.root.title("Image Editor")
-        icon = PhotoImage(file=r'C:\Users\PC\Downloads\iconEps.bmp')
+        self.root.title("Enzo Image Editor")
+        icon = PhotoImage(file=r"C:\Users\PC\Downloads\iconEps.png")
         root.iconphoto(False, icon)
         # Layout setup
         self.frame_left = tk.Frame(root, width=200, height=400, padx=10, pady=10)
