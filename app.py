@@ -2,12 +2,14 @@ import tkinter as tk
 from tkinter import filedialog
 from tkinter import ttk
 from PIL import Image, ImageTk, ImageFilter, ImageEnhance, ImageOps
+from tkinter import PhotoImage
 
 class ImageEditorApp:
     def __init__(self, root):  # Corrigido de _init_ para __init__
         self.root = root
         self.root.title("Image Editor")
-
+        icon = PhotoImage(file=r'C:\Users\PC\Downloads\iconEps.bmp')
+        root.iconphoto(False, icon)
         # Layout setup
         self.frame_left = tk.Frame(root, width=200, height=400, padx=10, pady=10)
         self.frame_left.grid(row=0, column=0, sticky="ns")
